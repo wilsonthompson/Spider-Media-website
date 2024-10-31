@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpiderMedia - Home</title>
+        <link rel="stylesheet" href="style.css">
+        
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Evenementen</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sporten.html">Sporten</a></li>
+                <li><a href="evenementen.html">Evenementen</a></li>
+                <li><a href="trainingen.html">Trainingen</a></li>
+                <li><a href="promotoren.html">Promotoren</a></li>
+                <li><a href="galerij.html">Galerij</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Aankomende Evenementen</h2>
+
+            <!-- Evenementen per sportcategorie -->
+            <article class="event">
+                <h3>Karate Combat</h3>
+                <p>Datum: 12 april 2024</p>
+                <div id="countdown-karate" class="countdown"></div>
+                <figure>
+                    <img src="images/karate-combat.jpg" alt="Afbeelding Karate Combat" width="500" height="300">
+                    <figcaption>Karate Combat Evenement 2024</figcaption>
+                </figure>
+                <video controls width="500">
+                    <source src="videos/karate-combat-livestream.mp4" type="video/mp4">
+                    Uw browser ondersteunt de video tag niet.
+                </video>
+                <p><a href="https://karatecombat.com" target="_blank">Bezoek de officiële site</a></p>
+            </article>
+
+            <article class="event">
+                <h3>Muay Thai</h3>
+                <p>Datum: 25 mei 2024</p>
+                <div id="countdown-muaythai" class="countdown"></div>
+                <figure>
+                    <img src="images/muay-thai.jpg" alt="Afbeelding Muay Thai" width="500" height="300">
+                    <figcaption>Muay Thai Toernooi 2024</figcaption>
+                </figure>
+                <video controls width="500">
+                    <source src="videos/muay-thai-livestream.mp4" type="video/mp4">
+                    Uw browser ondersteunt de video tag niet.
+                </video>
+                <p><a href="https://muaythaifederation.com" target="_blank">Bezoek de officiële site</a></p>
+            </article>
+
+            <article class="event">
+                <h3>Boxing</h3>
+                <p>Datum: 15 maart 2024</p>
+                <div id="countdown-boxing" class="countdown"></div>
+                <figure>
+                    <img src="images/boxing-event.jpg" alt="Afbeelding Boxing Championship" width="500" height="300">
+                    <figcaption>Boxing Championship 2024</figcaption>
+                </figure>
+                <video controls width="500">
+                    <source src="videos/boxing-livestream.mp4" type="video/mp4">
+                    Uw browser ondersteunt de video tag niet.
+                </video>
+                <p><a href="https://www.boxingevent.nl" target="_blank">Bezoek de officiële site</a></p>
+            </article>
+
+            <article class="event">
+                <h3>Mixed Martial Arts</h3>
+                <p>Datum: 3 juni 2024</p>
+                <div id="countdown-mma" class="countdown"></div>
+                <figure>
+                    <img src="images/mma-event.jpg" alt="Afbeelding MMA Event" width="500" height="300">
+                    <figcaption>Mixed Martial Arts Toernooi 2024</figcaption>
+                </figure>
+                <video controls width="500">
+                    <source src="videos/mma-livestream.mp4" type="video/mp4">
+                    Uw browser ondersteunt de video tag niet.
+                </video>
+                <p><a href="https://mmafederation.com" target="_blank">Bezoek de officiële site</a></p>
+            </article>
+
+            <article class="event">
+                <h3>Kickboxing</h3>
+                <p>Datum: 10 juli 2024</p>
+                <div id="countdown-kickboxing" class="countdown"></div>
+                <figure>
+                    <img src="images/kickboxing-event.jpg" alt="Afbeelding Kickboxing Evenement" width="500" height="300">
+                    <figcaption>Kickboxing Kampioenschap 2024</figcaption>
+                </figure>
+                <video controls width="500">
+                    <source src="videos/kickboxing-livestream.mp4" type="video/mp4">
+                    Uw browser ondersteunt de video tag niet.
+                </video>
+                <p><a href="https://kickboxingfederation.com" target="_blank">Bezoek de officiële site</a></p>
+            </article>
+
+            <article class="event">
+                <h3>Bare Knuckle Boxing</h3>
+                <p>Datum: 20 augustus 2024</p>
+                <div id="countdown-bkb" class="countdown"></div>
+                <figure>
+                    <img src="images/bare-knuckle.jpg" alt="Afbeelding Bare Knuckle Boxing" width="500" height="300">
+                    <figcaption>Bare Knuckle Boxing 2024</figcaption>
+                </figure>
+                <video controls width="500">
+                    <source src="videos/bare-knuckle-livestream.mp4" type="video/mp4">
+                    Uw browser ondersteunt de video tag niet.
+                </video>
+                <p><a href="https://bareknuckleboxing.com" target="_blank">Bezoek de officiële site</a></p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Spider Media. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script>
+        // Aftelklokfunctie voor verschillende evenementen
+        function countdown(targetDate, countdownElement) {
+            const target = new Date(targetDate).getTime();
+            const interval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = target - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.innerHTML = days + "d " + hours + "u " + minutes + "m " + seconds + "s ";
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownElement.innerHTML = "Evenement gestart!";
+                }
+            }, 1000);
+        }
+
+        // Start aftelklokken voor verschillende evenementen
+        countdown("April 12, 2024 00:00:00", document.getElementById("countdown-karate"));
+        countdown("May 25, 2024 00:00:00", document.getElementById("countdown-muaythai"));
+        countdown("March 15, 2024 00:00:00", document.getElementById("countdown-boxing"));
+        countdown("June 3, 2024 00:00:00", document.getElementById("countdown-mma"));
+        countdown("July 10, 2024 00:00:00", document.getElementById("countdown-kickboxing"));
+        countdown("August 20, 2024 00:00:00", document.getElementById("countdown-bkb"));
+    </script>
+
+</body>
+</html>

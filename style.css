@@ -1,0 +1,374 @@
+/* Algemene Stijlen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.countdown {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.event {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+/* Algemene Stijlen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Galerij Sectie */
+.categorie {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.categorie h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Flexbox Styling voor Media-secties */
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+/* Styling voor de Uitslagen Lijst */
+.media h4 {
+    width: 100%;
+    color: #444;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Afbeeldingen Styling */
+.media img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.media img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Styling */
+.media video {
+    width: 300px;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 2px solid #555;
+}
+
+/* Contact Sectie Styling */
+.contact {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.submit-button:active {
+    background-color: #003f7f;
+}
+
+body {
+    background-image: url('path/to/your/background-image.jpg'); /* Vervang dit door het pad naar jouw afbeelding */
+    background-size: cover; /* Zorg ervoor dat de afbeelding de gehele achtergrond bedekt */
+    background-position: center; /* Plaats de afbeelding in het midden */
+    background-repeat: no-repeat; /* Herhaal de afbeelding niet */
+    color: #ffffff; /* Zorg ervoor dat de tekst goed leesbaar is, pas aan indien nodig */
+}
+
+header {
+    padding-bottom: 40px; /* Voeg extra ruimte toe onder de header */
+}
+
+nav ul {
+    margin-top: 40px; /* Voeg extra ruimte toe boven de navigatielinks */
+}
+
+header {
+    background-color: #333; /* Voorbeeld achtergrondkleur */
+    color: #fff;
+    padding: 20px; /* Boven- en ondermarge voor de header */
+    padding-bottom: 40px; /* Extra ruimte onder de header */
+}
+
+nav ul {
+    list-style-type: none; /* Verwijder de opsommingstekens */
+    padding: 0; /* Verwijder padding */
+    margin: 0; /* Verwijder margin */
+    margin-top: 40px; /* Voeg extra ruimte toe boven de navigatielinks */
+}
+
+nav ul li {
+    display: inline; /* Zet de links naast elkaar */
+    margin-right: 20px; /* Ruimte tussen de links */
+}
+
+nav ul li a {
+    color: #fff; /* Kleur van de links */
+    text-decoration: none; /* Verwijder onderlijnen */
+}
+/* Stel achtergrondafbeelding in voor de gehele <main> sectie */
+main {
+    background-image: url('https://1stplace4trophies.co.uk/product_images/uploaded_images/shutterstock-219773119.jpg');
+    background-size: cover; /* Zorgt ervoor dat de afbeelding het hele gebied bedekt */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px; /* Extra ruimte rondom de content binnen <main> */
+    min-height: 70vh; /* Zorgt ervoor dat het hoofdgedeelte minstens 70% van de hoogte heeft */
+}
+main {
+    color: white;
+}
+main {
+    position: relative;
+    color: white;
+}
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Verduistert de afbeelding */
+    z-index: -1;
+}
+/* Formulierstijl */
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Stijl voor de chatbox */
+.chatbox {
+    color: black; /* Zet de tekstkleur naar zwart */
+    background-color: #f9f9f9; /* Een lichte achtergrond voor contrast */
+    padding: 10px; /* Voeg wat padding toe */
+    border-radius: 5px; /* Maak de hoeken iets ronder */
+    border: 1px solid #ccc; /* Lichte rand om de chatbox */
+}
+
+footer p {
+    margin: 0;
+}

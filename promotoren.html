@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpiderMedia - Jouw Pagina Titel</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>    
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Promotoren en Organisaties per Sportcategorie</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sporten.html">Sporten</a></li>
+                <li><a href="evenementen.html">Evenementen</a></li>
+                <li><a href="trainingen.html">Trainingen</a></li>
+                <li><a href="promotoren.html">Promotoren</a></li>
+                <li><a href="galerij.html">Galerij</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+
+        <!-- Vertaalknop -->
+        <div id="google_translate_element"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Sportcategorieën en Actieve Organisaties</h2>
+
+            <!-- Karate Combat's -->
+            <article class="sportcategorie">
+                <h3>Karate Combat's</h3>
+                <figure>
+                    <img src="images/karate-combat-logo.jpg" alt="Karate Combat's Logo" width="150" height="150">
+                    <figcaption>Karate Combat's</figcaption>
+                </figure>
+                <p>Karate Combat biedt full-contact karate en wordt gepromoot als een wereldwijd evenement voor karate-atleten.</p>
+                <label for="karate-combat-bonden">Selecteer een bond of organisatie:</label>
+                <select id="karate-combat-bonden" onchange="window.open(this.value)">
+                    <option value="">-- Kies een organisatie --</option>
+                    <option value="https://www.karate.com">Karate Combat</option>
+                </select>
+            </article>
+
+            <!-- Muay Thai -->
+            <article class="sportcategorie">
+                <h3>Muay Thai</h3>
+                <figure>
+                    <img src="images/muay-thai-logo.jpg" alt="Muay Thai Logo" width="150" height="150">
+                    <figcaption>Muay Thai</figcaption>
+                </figure>
+                <p>Muay Thai, ook bekend als Thaiboksen, is een populaire vechtsport die wereldwijd wordt beoefend. Organisaties zoals de IFMA promoten Muay Thai op internationaal niveau.</p>
+                <label for="muay-thai-bonden">Selecteer een bond of organisatie:</label>
+                <select id="muay-thai-bonden" onchange="window.open(this.value)">
+                    <option value="">-- Kies een organisatie --</option>
+                    <option value="https://www.ifmamuaythai.org">International Federation of Muaythai Associations (IFMA)</option>
+                </select>
+            </article>
+
+            <!-- Kickboxing -->
+            <article class="sportcategorie">
+                <h3>Kickboxing</h3>
+                <figure>
+                    <img src="images/kickboxing-logo.jpg" alt="Kickboxing Logo" width="150" height="150">
+                    <figcaption>Kickboxing</figcaption>
+                </figure>
+                <p>Kickboksen combineert elementen van karate, Muay Thai en boksen. Organisaties zoals Glory en K-1 zijn wereldwijd bekend.</p>
+                <label for="kickboxing-bonden">Selecteer een bond of organisatie:</label>
+                <select id="kickboxing-bonden" onchange="window.open(this.value)">
+                    <option value="">-- Kies een organisatie --</option>
+                    <option value="https://www.glorykickboxing.com">Glory Kickboxing</option>
+                    <option value="https://www.k-1.co.jp">K-1</option>
+                </select>
+            </article>
+
+            <!-- Boxing -->
+            <article class="sportcategorie">
+                <h3>Boxing</h3>
+                <figure>
+                    <img src="images/boxing-logo.jpg" alt="Boxing Logo" width="150" height="150">
+                    <figcaption>Boxing</figcaption>
+                </figure>
+                <p>Boksen is een van de oudste gevechtssporten, georganiseerd door bonden zoals de WBC, WBA, en IBF.</p>
+                <label for="boxing-bonden">Selecteer een bond of organisatie:</label>
+                <select id="boxing-bonden" onchange="window.open(this.value)">
+                    <option value="">-- Kies een organisatie --</option>
+                    <option value="https://www.wbcboxing.com">World Boxing Council (WBC)</option>
+                    <option value="https://www.wba.com">World Boxing Association (WBA)</option>
+                    <option value="https://www.ibf-usba-boxing.com">International Boxing Federation (IBF)</option>
+                </select>
+            </article>
+
+            <!-- Mixed Martial Arts -->
+            <article class="sportcategorie">
+                <h3>Mixed Martial Arts</h3>
+                <figure>
+                    <img src="images/mma-logo.jpg" alt="MMA Logo" width="150" height="150">
+                    <figcaption>Mixed Martial Arts (MMA)</figcaption>
+                </figure>
+                <p>MMA combineert verschillende vechtsportdisciplines, met grote organisaties zoals de UFC en Bellator.</p>
+                <label for="mma-bonden">Selecteer een bond of organisatie:</label>
+                <select id="mma-bonden" onchange="window.open(this.value)">
+                    <option value="">-- Kies een organisatie --</option>
+                    <option value="https://www.ufc.com">Ultimate Fighting Championship (UFC)</option>
+                    <option value="https://www.bellator.com">Bellator MMA</option>
+                </select>
+            </article>
+
+            <!-- Bare Knuckle Boxing -->
+            <article class="sportcategorie">
+                <h3>Bare Knuckle Boxing</h3>
+                <figure>
+                    <img src="images/bare-knuckle-logo.jpg" alt="Bare Knuckle Boxing Logo" width="150" height="150">
+                    <figcaption>Bare Knuckle Boxing</figcaption>
+                </figure>
+                <p>Bare Knuckle Boxing keert terug naar het oude boksen zonder handschoenen en wordt gereguleerd door organisaties zoals de BKFC.</p>
+                <label for="bare-knuckle-bonden">Selecteer een bond of organisatie:</label>
+                <select id="bare-knuckle-bonden" onchange="window.open(this.value)">
+                    <option value="">-- Kies een organisatie --</option>
+                    <option value="https://www.bareknuckle.tv">Bare Knuckle Fighting Championship (BKFC)</option>
+                </select>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Spider Media. Alle rechten voorbehouden.</p>
+    </footer>
+
+</body>
+</html>
